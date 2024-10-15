@@ -19,7 +19,7 @@ async function loadConfig(client, db) {
 
     const defaultData = {
         antigroup: {
-            state: true,
+            state: false,
             message: false,
         },
     };
