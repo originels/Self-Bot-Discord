@@ -84,7 +84,7 @@ node index.js
 
 ```js
 ┌──────────────────────────────────────────────────────────────────────┐
-│                  • UwUhq Edition 0.2.0 •                             │
+│                  • UwUhq Edition 0.0.0 •                             │
 │                 (SB session client tools)                            │
 │                                                                      │
 │  > Self-Bot session to seth@uwuhq                                    │
