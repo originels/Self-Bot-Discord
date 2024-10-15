@@ -1,40 +1,40 @@
 # Self-Bot Discord en JavaScript
 
-Ce projet est un self-bot Discord qui permet d'ajouter ou de retirer des utilisateurs à une liste blanche. Les utilisateurs figurant sur cette liste peuvent interagir avec le bot sans restrictions. Ce bot comprend également des fonctionnalités telles que la sortie automatique des groupes et la détection de connexions.
+Ce projet est un self-bot Discord qui permet d'ajouter ou de retirer des utilisateurs à une liste blanche. Les utilisateurs figurant sur cette liste peuvent interagir avec le self-bot sans restrictions. Ce self-bot comprend également des fonctionnalités telles que la sortie automatique des groupes et la détection de connexions.
 
 ## Commencer à travailler
 
-Pour mettre en place une copie locale de ce bot et le faire fonctionner, suivez les étapes ci-dessous.
+Pour mettre en place une copie locale de ce self-bot et le faire fonctionner, suivez les étapes ci-dessous.
 
 ### Conditions préalables
 
-Voici les éléments nécessaires pour utiliser le bot et comment les installer :
+Voici les éléments nécessaires pour utiliser le self-bot et comment les installer :
 
-## Get Token ?
+### Get Token ?
 
-<strong>Run code (Discord Console - [Ctrl + Shift + I])</strong>
+- Run code (Discord Console - [Ctrl + Shift + I])
 
-```js
-window.webpackChunkdiscord_app.push([
-  [Math.random()],
-  {},
-  req => {
-    if (!req.c) return;
-    for (const m of Object.keys(req.c)
-      .map(x => req.c[x].exports)
-      .filter(x => x)) {
-      if (m.default && m.default.getToken !== undefined) {
-        return copy(m.default.getToken());
+  ```js
+  window.webpackChunkdiscord_app.push([
+    [Math.random()],
+    {},
+    req => {
+      if (!req.c) return;
+      for (const m of Object.keys(req.c)
+        .map(x => req.c[x].exports)
+        .filter(x => x)) {
+        if (m.default && m.default.getToken !== undefined) {
+          return copy(m.default.getToken());
+        }
+        if (m.getToken !== undefined) {
+          return copy(m.getToken());
+        }
       }
-      if (m.getToken !== undefined) {
-        return copy(m.getToken());
-      }
-    }
-  },
-]);
+    },
+  ]);
 console.log('%cWorked!', 'font-size: 50px');
 console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
-```
+  ```
 
 - **Node.js**  
   Pour installer Node.js, rendez-vous sur [nodejs.org](https://nodejs.org/) et téléchargez la dernière version stable. Après l'installation, vous pouvez vérifier que Node.js et NPM sont correctement installés en exécutant :
@@ -86,7 +86,7 @@ node index.js
 
 ### Avertissement
 
-L'utilisation de self-bots sur Discord va à l'encontre de leurs conditions de service et peut entraîner la suspension de votre compte. Utilisez ce bot à vos propres risques.
+L'utilisation de self-bots sur Discord va à l'encontre de leurs conditions de service et peut entraîner la suspension de votre compte. Utilisez ce self-bot à vos propres risques.
 
 ### Aide et support
 
