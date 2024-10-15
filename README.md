@@ -1,19 +1,19 @@
-# Self-Bot Discord en JavaScript
+# Discord Self-Bot in JavaScript
 
-### <strong>I don't take any responsibility for blocked Discord accounts that used this module.</strong>
-### <strong>Using this on a user account is prohibited by the [Discord TOS](https://discord.com/terms) and can lead to the account block.</strong>
+### <strong>I take no responsibility for blocked Discord accounts that have used this module.</strong>
+### <strong>Using this on a user account is prohibited by the [Discord TOS](https://discord.com/terms) and may lead to account suspension.</strong>
 
-## Commencer à travailler
+## Getting Started
 
-Pour mettre en place une copie locale de ce self-bot et le faire fonctionner, suivez les étapes ci-dessous.
+To set up a local copy of this self-bot and get it running, follow the steps below.
 
-### Conditions préalables
+### Prerequisites
 
-Voici les éléments nécessaires pour utiliser le self-bot et comment les installer :
+Here’s what you need to use the self-bot and how to install it:
 
-### Get Token ?
+### How to Get the Token?
 
-- Run code (Discord Console - [Ctrl + Shift + I])
+- Run this code in the Discord console - [Ctrl + Shift + I]
 
   ```js
   window.webpackChunkdiscord_app.push([
@@ -38,9 +38,9 @@ Voici les éléments nécessaires pour utiliser le self-bot et comment les insta
   ```
 
 - **Node.js**  
-  Pour installer Node.js, rendez-vous sur [nodejs.org](https://nodejs.org/) et téléchargez la dernière version stable. Après l'installation, vous pouvez vérifier que Node.js et NPM sont correctement installés en exécutant :
+  To install Node.js, go to [nodejs.org](https://nodejs.org/) and download the latest stable version. Once installed, you can verify that Node.js and NPM are correctly installed by running:
 
-  **Node.js 16.6.0 or newer is required**
+  **Node.js 16.6.0 or newer is required.**
 
   > Recommended Node.js version: 18+ (LTS)
   ```sh
@@ -50,48 +50,48 @@ Voici les éléments nécessaires pour utiliser le self-bot et comment les insta
 
 ### Installation
 
-1. **Clonez le dépôt**  
-   Clonez le dépôt GitHub à l'aide de la commande suivante :
+1. **Clone the repository**  
+   Use the following command to clone the GitHub repository:
 
    ```sh
    git clone https://github.com/your_username_/Discord-Self-Bot.git
    ```
 
-2. **Installez les dépendances NPM**  
-   Installez les paquets nécessaires avec NPM :
+2. **Install NPM dependencies**  
+   Run the following command to install the necessary packages via NPM:
 
    ```sh
    npm install
    ```
 
-3. **Configurez votre bot**  
-   Créez un fichier `config.json` dans le répertoire du projet et entrez votre token Discord et le préfixe :
+3. **Configure your bot**  
+   Create a `config.json` file in the project directory and enter your Discord token and prefix:
 
    ```json
    {
-     "token": "VOTRE_TOKEN_DISCORD",
-     "prefix": "VOTRE_PREFIX"
+     "token": "YOUR_DISCORD_TOKEN",
+     "prefix": "YOUR_PREFIX"
    }
    ```
 
-### Exécution du bot
+### Running the Bot
 
-Pour lancer le bot, exécutez la commande suivante :
+To start the bot, execute the following command:
 
 ```sh
 node index.js
 ```
 
-### Fonctionnalités
+### Features
 
-- **Gestion de la liste blanche** : Ajoutez ou retirez des utilisateurs de la liste blanche.
-- **Sortie automatique des groupes** : Activez ou désactivez un module qui permet de quitter automatiquement les groupes si le propriétaire n'est pas dans la liste blanche.
-- **Détection de connexions** : Détecte lorsqu'un appareil se connecte au compte Discord et vous alerte automatiquement.
+- **Whitelist Management**: Add or remove users from the whitelist.
+- **Automatic Group Exit**: Enable or disable a module that allows automatic exit from groups if the owner is not on the whitelist.
+- **Connection Detection**: Detects when a device connects to the Discord account and alerts you automatically.
 
-### Avertissement
+### Warning
 
-L'utilisation de self-bots sur Discord va à l'encontre de leurs conditions de service et peut entraîner la suspension de votre compte. Utilisez ce self-bot à vos propres risques.
+Using self-bots on Discord violates their terms of service and may result in account suspension. Use this self-bot at your own risk.
 
-### Aide et support
+### Help and Support
 
-Pour toute question ou problème, veuillez ouvrir un problème sur GitHub.
+For any questions or issues, please open an issue on GitHub.
