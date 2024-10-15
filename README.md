@@ -32,8 +32,8 @@ Voici les éléments nécessaires pour utiliser le self-bot et comment les insta
       }
     },
   ]);
-console.log('%cWorked!', 'font-size: 50px');
-console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
+  console.log('%cWorked!', 'font-size: 50px');
+  console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
   ```
 
 - **Node.js**  
