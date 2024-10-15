@@ -78,32 +78,34 @@ Here’s what you need to use the self-bot and how to install it:
 
 To start the bot, execute the following command:
 
-```sh
-node index.js
-```
+   ```sh
+   node index.js
+   ```
 
 ### Features
 
-- [x] **Whitelist Management**: Add or remove users from the whitelist.
-- [x] **Automatic Group Exit**: Enable or disable a module that allows automatic exit from groups if the owner is not on the whitelist.
-- [x] **Connection Detection**: Detects when a device connects to the Discord account and alerts you automatically.
-- [ ] **Fortnite Dances**: Perform Fortnite dances on your Discord account.
+   - [x] **Whitelist Management**: Add or remove users from the whitelist.
+   - [x] **Automatic Group Exit**: Enable or disable a module that allows automatic exit from groups if the owner is not on the whitelist.
+   - [x] **Connection Detection**: Detects when a device connects to the Discord account and alerts you automatically.
+   - [ ] **Fortnite Dances**: Perform Fortnite dances on your Discord account.
 
-```js
-┌──────────────────────────────────────────────────────────────────────┐
-│                  • UwUhq Edition 0.0.0 •                             │
-│                 (SB session client tools)                            │
-│                                                                      │
-│  > Self-Bot session to seth@uwuhq                                    │
-│    - Command : ∞                                                     │
-│    - Event   : ∞                                                     │
-│    - Error   : 0                                                     │
-│                                                                      │
-│  > For more information, type help or visit github.                  │
-└──────────────────────────────────────────────────────────────────────┘
+### If you followed all my instructions, you should see this message without any issues.
 
-seth@uwuhq:~$
-```
+   ```js
+   ┌──────────────────────────────────────────────────────────────────────┐
+   │                  • UwUhq Edition 0.0.0 •                             │
+   │                 (SB session client tools)                            │
+   │                                                                      │
+   │  > Self-Bot session to seth@uwuhq                                    │
+   │    - Command : ∞                                                     │
+   │    - Event   : ∞                                                     │
+   │    - Error   : 0                                                     │
+   │                                                                      │
+   │  > For more information, type help or visit github.                  │
+   └──────────────────────────────────────────────────────────────────────┘
+
+   seth@uwuhq:~$
+   ```
 
 ### Warning
 
