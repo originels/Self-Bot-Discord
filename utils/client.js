@@ -1,5 +1,5 @@
 const { Client, Collection } = require('discord.js-selfbot-v13');
-const { startConnectingMessage, stopConnectingMessage, consoleInfo, terminalConsole } = require('../structures/gestion/console.js');
+const { startConnectingMessage, stopConnectingMessage, consoleInfo, terminalConsole } = require('../structures/management/console.js');
 class client extends Client {
     constructor() {
         super({
