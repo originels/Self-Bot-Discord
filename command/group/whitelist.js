@@ -1,4 +1,4 @@
-const { moduleMessage, Notification } = require('../../structures/gestion/config.js');
+const { moduleMessage, Notification } = require('../../structures/management/config.js');
 const { getUser } = require('../../structures/get/user.js');
 
 module.exports = {
