@@ -47,7 +47,7 @@ Voici les éléments nécessaires pour utiliser le bot et comment les installer 
    ```json
    {
      "token": "VOTRE_TOKEN_DISCORD",
-     "whitelist": ["ID_UTILISATEUR_1", "ID_UTILISATEUR_2"]
+     "prefix": "VOTRE_MAIN_PREFIX"
    }
    ```
 
