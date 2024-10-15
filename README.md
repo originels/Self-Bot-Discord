@@ -39,6 +39,9 @@ Voici les éléments nécessaires pour utiliser le self-bot et comment les insta
 - **Node.js**  
   Pour installer Node.js, rendez-vous sur [nodejs.org](https://nodejs.org/) et téléchargez la dernière version stable. Après l'installation, vous pouvez vérifier que Node.js et NPM sont correctement installés en exécutant :
 
+  **Node.js 16.6.0 or newer is required**
+  
+  > Recommended Node.js version: 18+ (LTS)
   ```sh
   node -v
   npm -v
