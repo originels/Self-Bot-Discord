@@ -27,29 +27,30 @@ Voici les éléments nécessaires pour utiliser le bot et comment les installer 
    git clone https://github.com/your_username_/Discord-Self-Bot.git
    ```
 
-2. **Accédez au répertoire du projet**  
-   Changez de répertoire vers le projet cloné :
-
-   ```sh
-   cd Discord-Self-Bot
-   ```
-
-3. **Installez les dépendances NPM**  
+2. **Installez les dépendances NPM**  
    Installez les paquets nécessaires avec NPM :
 
    ```sh
    npm install
    ```
 
-4. **Configurez votre bot**  
-   Créez un fichier `config.json` dans le répertoire du projet et entrez votre token Discord et la liste blanche :
+3. **Configurez votre bot**  
+   Créez un fichier `config.json` dans le répertoire du projet et entrez votre token Discord et le préfixe :
 
    ```json
    {
      "token": "VOTRE_TOKEN_DISCORD",
-     "prefix": "VOTRE_MAIN_PREFIX"
+     "prefix": "VOTRE_PREFIX"
    }
    ```
+
+### Exécution du bot
+
+Pour lancer le bot, exécutez la commande suivante :
+
+```sh
+node index.js
+```
 
 ### Fonctionnalités
 
