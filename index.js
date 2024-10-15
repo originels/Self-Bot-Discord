@@ -7,7 +7,7 @@ const client = new Client();
 const handler = require("./utils/handler.js");
 const config = require("./utils/config.json");
 
-const { logError, consoleError } = require('./structures/gestion/error.js');
+const { logError, consoleError } = require('./structures/management/error.js');
 handler(client, db, config).then(() => client.go());
 
 process.on("unhandledRejection", err => {
