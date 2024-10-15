@@ -1,4 +1,4 @@
-const { moduleMessage } = require('../../structures/gestion/config.js');
+const { moduleMessage } = require('../../structures/management/config.js');
 
 module.exports = {
     name: 'antigroup',
