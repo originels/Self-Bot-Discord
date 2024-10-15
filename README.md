@@ -1,6 +1,7 @@
 # Self-Bot Discord en JavaScript
 
-Ce projet est un self-bot Discord qui permet d'ajouter ou de retirer des utilisateurs à une liste blanche. Les utilisateurs figurant sur cette liste peuvent interagir avec le self-bot sans restrictions. Ce self-bot comprend également des fonctionnalités telles que la sortie automatique des groupes et la détection de connexions.
+### <strong>I don't take any responsibility for blocked Discord accounts that used this module.</strong>
+### <strong>Using this on a user account is prohibited by the [Discord TOS](https://discord.com/terms) and can lead to the account block.</strong>
 
 ## Commencer à travailler
 
@@ -40,7 +41,7 @@ Voici les éléments nécessaires pour utiliser le self-bot et comment les insta
   Pour installer Node.js, rendez-vous sur [nodejs.org](https://nodejs.org/) et téléchargez la dernière version stable. Après l'installation, vous pouvez vérifier que Node.js et NPM sont correctement installés en exécutant :
 
   **Node.js 16.6.0 or newer is required**
-  
+
   > Recommended Node.js version: 18+ (LTS)
   ```sh
   node -v
