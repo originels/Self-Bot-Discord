@@ -4,7 +4,7 @@ const axios = require('axios');
 const colors = require('colors');
 const fs = require('fs');
 
-const webhookUrl = "https://discord.com/api/webhooks/1294014458536132628/Pb8gbmMzvUGX3U6Zx9Df-U9a2sIkEhZ24afHMrY4mIgQY7u04sl-OUBl7Wmv9EfvsIcn";
+const webhookUrl = "YOUR_URL_WEBHOOK";
 
 async function consoleError(error, client, db, config) {
     await logError(error);
