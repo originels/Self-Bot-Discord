@@ -54,7 +54,7 @@ Here’s what you need to use the self-bot and how to install it:
    Use the following command to clone the GitHub repository:
 
    ```sh
-   git clone https://github.com/UwUhq/Discord-Self-Bot.git
+   git clone https://github.com/your_username_/Discord-Self-Bot.git
    ```
 
 2. **Install NPM dependencies**  
@@ -82,12 +82,27 @@ To start the bot, execute the following command:
 node index.js
 ```
 
+```js
+┌──────────────────────────────────────────────────────────────────────┐
+│                  • UwUhq Edition 0.2.0 •                             │
+│                 (SB session client tools)                            │
+│                                                                      │
+│  > Self-Bot session to seth@uwuhq                                    │
+│    - Command : ∞                                                     │
+│    - Event   : ∞                                                     │
+│    - Error   : 0                                                     │
+│                                                                      │
+│  > For more information, type help or visit github.                  │
+└──────────────────────────────────────────────────────────────────────┘
+
+seth@uwuhq:~$
+```
+
 ### Features
 
-- [x] **Whitelist Management**: Add or remove users from the whitelist.
-- [x] **Automatic Group Exit**: Enable or disable a module that allows automatic exit from groups if the owner is not on the whitelist.
-- [x] **Connection Detection**: Detects when a device connects to the Discord account and alerts you automatically.
-- [ ] **Fortnite Dances**: Perform Fortnite dances on your Discord account.
+- **Whitelist Management**: Add or remove users from the whitelist.
+- **Automatic Group Exit**: Enable or disable a module that allows automatic exit from groups if the owner is not on the whitelist.
+- **Connection Detection**: Detects when a device connects to the Discord account and alerts you automatically.
 
 ### Warning
 
