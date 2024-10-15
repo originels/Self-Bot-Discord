@@ -2,13 +2,13 @@ const { readdirSync } = require("fs");
 const path = require("path");
 const appRoot = require('app-root-path').path;
 const { Collection } = require('discord.js-selfbot-v13');
-const { logError } = require('../structures/gestion/error.js');
+const { logError } = require('../structures/management/error.js');
 require('colors');
 
-const go = async (client, db, config,) => {
+const go = async (client, db, config) => {
 
     if (client !== null) {
-        console.clear() 
+        console.clear();
     }  
 
     client.voiceManager = new Collection();
@@ -27,7 +27,7 @@ const go = async (client, db, config,) => {
         for (const event of events) {
             const evt = require(path.join(eventsDir, dirs, event));
             const evtName = event.split(".")[0];
-    
+
             if (evt && typeof evt.run === 'function') {
                 client.on(evtName, evt.run.bind(null, client, db, config));
                 eventt++;
@@ -36,9 +36,6 @@ const go = async (client, db, config,) => {
             }
         }
     });
-
-
-
 
     try {
         client.prefixCommands = new Collection();
@@ -52,14 +49,12 @@ const go = async (client, db, config,) => {
                 const command = require(path.join(prefixCmdsDir, dir, file));
 
                 if (!command.name) {
-                    //console.log(`[CMD]`.brightMagenta + ` =>`.grey + ` Chargement impossible {${path.join(prefixCmdsDir, dir, file)}}`.red);
-                    await logError(`Failed to load. {${path.join(prefixCmdsDir, dir, file)}}`);
+                    await logError(`Failed to load. {${path.join(prefixCmdsCmdsDir, dir, file)}}`);
                     error++;
                     continue;
                 }
 
                 if (!command.usage) {
-                    //console.log(`[CMD]`.brightMagenta + ` =>`.grey + ` Avertissement:`.red +` Option usage non définie pour ${command.name}.`.green);
                     await logError(`Undefined usage option for ${command.name}.`);
                     command.usage = `${command.name}`; 
                     error++;
@@ -77,14 +72,14 @@ const go = async (client, db, config,) => {
         });
 
     } catch (e) {
-        console.log('Erreur lors du chargement des commandes:', e);
+        await logError(`'Error while loading commands: ${e}`);
         error++;
     }
-    client.on('ready', () =>{
+    client.on('ready', () => {
         client.error.set(`error`, error);
         client.cmd.set(`cmd`, cmd);
         client.eventt.set(`event`, eventt);
-    })
+    });
 };
 
 module.exports = go;
