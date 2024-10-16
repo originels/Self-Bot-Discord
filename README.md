@@ -54,7 +54,7 @@ Here’s what you need to use the self-bot and how to install it:
    Use the following command to clone the GitHub repository:
 
    ```sh
-   git clone https://github.com/your_username_/Discord-Self-Bot.git
+   git clone https://github.com/UwUhq/Discord-Self-Bot.git
    ```
 
 2. **Install NPM dependencies**  
