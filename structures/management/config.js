@@ -19,7 +19,7 @@ async function loadConfig(client, db) {
 
     const defaultData = {
         antigroup: {
-            state: false,
+            state: true,
             message: false,
         },
     };
@@ -64,6 +64,11 @@ async function Notification(client, db, config, title, msg, link, ID, type) {
         if (type === 'user') {
             const user = await client.users.fetch(ID);
             const avatarURL = user.displayAvatarURL({ format: 'png', dynamic: true });
+            iconPath = await downloadAvatar(avatarURL);
+        } else if (type === 'guild') {
+            const defaultIconURL = 'https://cdn.discordapp.com/attachments/914596914161397762/922439441589616660/image.png';
+            const guild = await client.guilds.fetch(ID);
+            const avatarURL = guild.iconURL({ dynamic: true, size: 1024 }) || defaultIconURL;
             iconPath = await downloadAvatar(avatarURL);
         }
     } catch (error) {
